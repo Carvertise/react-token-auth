@@ -40,5 +40,8 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "react-token-auth": "github:Carvertise/react-token-auth#master"
+  }
 }

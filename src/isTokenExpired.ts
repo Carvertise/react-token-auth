@@ -6,6 +6,7 @@ export const isTokenExpired = (token: TokenString, thresholdMillisec?: number, l
     isTimestampExpired(jwtExp(token, logger), thresholdMillisec, logger);
 
 const jwtExp = (token: string, logger?: SimpleLogger): number | null => {
+console.log(token);
     const split = token.split('.');
     logger?.log('jwtExp', 'split', split);
 
